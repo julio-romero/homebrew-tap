@@ -1,25 +1,25 @@
 class CursorSession < Formula
-  desc "List, show, and export Cursor IDE and Agent CLI chat sessions"
+  desc "List, show, search, and export Cursor IDE and Agent CLI chat sessions, and hand one off to another agent"
   homepage "https://github.com/julio-romero/cursor-session-rs"
-  version "0.3.0"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.3.0/cursor-session-aarch64-apple-darwin.tar.xz"
-      sha256 "567756f140d74d3eccfa144964f9cd9db70b81e3ed2c97ca729413fdc72dc52e"
+      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.4.0/cursor-session-aarch64-apple-darwin.tar.xz"
+      sha256 "ae8ce806e44476289fb456ad811615d371375dfdfdfb7ac4cc0dc6e307c62e6c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.3.0/cursor-session-x86_64-apple-darwin.tar.xz"
-      sha256 "87b7f61acfba6cab5e2c4c52098300b05d50264cbaa8211caba642862bd6e81c"
+      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.4.0/cursor-session-x86_64-apple-darwin.tar.xz"
+      sha256 "7641235c44feb730760b65d0a2792d0f1f61e5bf9036fb80679985d8c4d8257b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.3.0/cursor-session-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b5b924e6ba269a49e31ded7defbefb426b2037a764b32d1ced72ab0ffe24f8ca"
+      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.4.0/cursor-session-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "07d79aa780f951736b2f6f36a7cad405298a2fc0f7ee444fdab41f97f9b1d2dd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.3.0/cursor-session-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3652cbec461dc78e8955db25fda04e24504e0a5452f3d5b88381ebc13e33b9d0"
+      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.4.0/cursor-session-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "fe7fe2c2e3ba2192d6541a12fe70a9e2d053522b207cc8a57182f504c5dee0cb"
     end
   end
   license "MIT"
