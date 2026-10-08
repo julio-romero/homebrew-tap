@@ -1,25 +1,25 @@
 class CursorSession < Formula
   desc "List, show, and export Cursor IDE and Agent CLI chat sessions"
   homepage "https://github.com/julio-romero/cursor-session-rs"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.2.0/cursor-session-aarch64-apple-darwin.tar.xz"
-      sha256 "131e17f3d0a0e4fbc453d73c6d9b477848d34811bfbc816b2ba6eb6617893ac0"
+      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.3.0/cursor-session-aarch64-apple-darwin.tar.xz"
+      sha256 "567756f140d74d3eccfa144964f9cd9db70b81e3ed2c97ca729413fdc72dc52e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.2.0/cursor-session-x86_64-apple-darwin.tar.xz"
-      sha256 "56fd45cfcd49e4ba9ba104f30d21af2dfda6532cbffe0cc26de804e3182ba115"
+      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.3.0/cursor-session-x86_64-apple-darwin.tar.xz"
+      sha256 "87b7f61acfba6cab5e2c4c52098300b05d50264cbaa8211caba642862bd6e81c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.2.0/cursor-session-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "13971fc78ddb795e15ed9af9310cdb7b6bfc6da69d883fc74c6b7faa0e66d1cd"
+      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.3.0/cursor-session-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b5b924e6ba269a49e31ded7defbefb426b2037a764b32d1ced72ab0ffe24f8ca"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.2.0/cursor-session-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "cf561fcc7b80ab8fb272da1369ca6c75e7e451bea7a78671c9734c3128072cca"
+      url "https://github.com/julio-romero/cursor-session-rs/releases/download/v0.3.0/cursor-session-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3652cbec461dc78e8955db25fda04e24504e0a5452f3d5b88381ebc13e33b9d0"
     end
   end
   license "MIT"
